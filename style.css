@@ -1,0 +1,182 @@
+/* Write some CSS below */
+
+body {
+  background-color: rgb(9, 9, 9);
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  font-family: 'Overpass';
+}
+
+h1, h2, h3 {
+  font-family: 'Chivo';
+}
+
+h1 {
+  color: whitesmoke;
+  font-size: 55px;
+  text-align: center;
+  font-style: italic;
+  background-color: rgba(0, 131, 176, 0.5);
+}
+
+h2 {
+  font-size: 28px;
+  color: aliceblue;
+  font-weight: 300;
+  text-align: center;
+  padding: 15px;
+
+}
+
+h3 {
+font-size: 22px;
+text-align: center;
+}
+
+ h4{color: red; 
+  text-align: right;
+  font-size: 50;
+ }
+
+a{
+  text-decoration: none;
+}
+
+a {
+  color: #0083B0;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+}
+
+#search-bar {
+  background-position: center;
+  width: 300px; /* ajuster la largeur selon vos préférences */
+  height: 40px; /* ajuster la hauteur selon vos préférences */
+}
+
+.container {
+  width: 1800px;
+  margin: 0px auto;
+}
+
+.banner {
+  background-image: url('images/nike.gif');
+  background-position: center;
+  background-size: cover;
+  padding: 60px 0; /*180px 0*/
+  text-align: center;
+  background-repeat:no-repeat ;
+}
+
+.banner p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #282626;
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+
+.btn-blue {
+  background-color: black;
+   color: white;
+   border-radius: 4px;
+   padding: 20px 50px;
+   font-size: 20px;
+   font-weight: 700;
+   transition: 0.3s;
+}
+
+.btn-blue:hover{
+  background-color: green;
+  opacity: 0.9;
+  transform: scale(1.1);
+}
+
+/* .container {fleft
+  width: 700px;
+  margin: 20px auto;
+  background-color: white;
+
+} */
+
+.card-white {
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  border-radius: 5px;
+  /* width: 400px; */
+ 
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.cards-inline{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.footer {
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+
+.footer p {
+  font-size: 20px;
+}
+
+/* .container, */
+.social-icons {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.social-icons {
+  text-align: left;
+  margin-left: 50px; 
+}
+
+.social-icons a {
+  text-align: left;
+  display: inline-block;
+}
+
+.social-icons img {
+  /* text-align: left; */
+  width: 50px;
+  height: 50px;
+}
+
+@media(max-width:960px){
+  .container { width:900px;}
+  .cards-inline {grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
+
+@media(max-width:720px){
+  .container { width:680px;}
+  .cards-inline {grid-template-columns: 1fr 1fr;}
+}
+
+@media(max-width:540px){
+  .container {width:480px;}
+  .cards-inline {grid-template-columns: 1fr;}
+}
